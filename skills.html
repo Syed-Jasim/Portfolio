@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Syed Mahammad Jasim</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3065/3065637.png" type="image/png" sizes="16x16" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #000;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.name .first-name {
+    color: #fff;
+}
+
+.name .last-name {
+    color: #f5a623;
+}
+
+nav {
+    margin-left: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f5a623;
+}
+
+.skills {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #f5a623;
+}
+
+.skill-card {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px auto; /* Centered margin */
+    width: 80%; /* Decreased width */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(245, 166, 35, 0.3);
+}
+
+.skill-name {
+    flex-grow: 1;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.skill-icon {
+    font-size: 40px;
+    color: #f5a623;
+    margin-left: 20px; /* Added margin for spacing */
+}
+
+.progress {
+    background-color: #444;
+    border-radius: 5px;
+    height: 8px; /* Adjusted height */
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.progress-bar {
+    background-color: #f5a623;
+    height: 100%;
+    width: 0; /* Set this via inline style */
+    transition: width 0.5s;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .skills {
+        padding: 40px 5%; /* Adjust padding for smaller screens */
+    }
+
+    .skills h2 {
+        font-size: 28px; /* Smaller heading size */
+    }
+
+    .skill-card {
+        width: 90%; /* Wider width for smaller screens */
+    }
+
+    .skill-icon {
+        font-size: 30px; /* Smaller icon size */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column; /* Stack header elements */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack navigation links */
+        align-items: flex-start; /* Align to the start */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Space between links */
+    }
+
+    .skills h2 {
+        font-size: 24px; /* Smaller heading size */
+    }
+
+    .skill-card {
+        flex-direction: column; /* Stack content in card */
+        align-items: center; /* Center items in card */
+    }
+
+    .skill-icon {
+        margin-top: 10px; /* Space between text and icon */
+        font-size: 40px; /* Icon size adjustment */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="name">
+            <span class="first-name">Syed Mahammad</span> <span class="last-name">Jasim</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html" class="btn-secondary" download>Resume</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-card">
+            <div class="skill-name">Java</div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 60%;"></div>
+            </div>
+            <div class="skill-icon"><i class="fab fa-java"></i></div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-name">Python</div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 40%;"></div>
+            </div>
+            <div class="skill-icon"><i class="fab fa-python"></i></div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-name">HTML</div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 48%;"></div>
+            </div>
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-name">CSS</div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 48%;"></div>
+            </div>
+            <div class="skill-icon"><i class="fab fa-css3"></i></div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-name">JavaScript</div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 32%;"></div>
+            </div>
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-name">MySQL</div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 40%;"></div>
+            </div>
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+        </div>
+    </section>
+</body>
+</html>
