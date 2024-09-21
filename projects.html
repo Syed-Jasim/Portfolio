@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Syed Mahammad Jasim</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5610/5610660.png" type="image/png" sizes="16x16" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #000;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.name .first-name {
+    color: #fff;
+}
+
+.name .last-name {
+    color: #f5a623;
+}
+
+nav {
+    margin-left: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f5a623;
+}
+
+.projects {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #f5a623;
+}
+
+.project-card {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px auto; /* Centered margin */
+    width: 80%; /* Decreased width */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Text color */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(245, 166, 35, 0.3);
+}
+
+.project-icon {
+    font-size: 40px;
+    color: #f5a623;
+    margin-left: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .projects {
+        padding: 40px 5%; /* Adjust padding for smaller screens */
+    }
+
+    .projects h2 {
+        font-size: 28px; /* Smaller heading size */
+    }
+
+    .project-card {
+        width: 90%; /* Wider width for smaller screens */
+    }
+
+    .project-icon {
+        font-size: 30px; /* Smaller icon size */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column; /* Stack header elements */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack navigation links */
+        align-items: flex-start; /* Align to the start */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Space between links */
+    }
+
+    .projects h2 {
+        font-size: 24px; /* Smaller heading size */
+    }
+
+    .project-card {
+        flex-direction: column; /* Stack content in card */
+        align-items: center; /* Center items in card */
+    }
+
+    .project-icon {
+        margin-top: 10px; /* Space between text and icon */
+        font-size: 40px; /* Icon size adjustment */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="name">
+            <span class="first-name">Syed Mahammad</span> <span class="last-name">Jasim</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html" class="btn-secondary" download>Resume</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="projects">
+        <h2>My Projects</h2>
+        <a href="projects.html" class="project-card">
+            <div>Web Development</div>
+            <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
+        </a>
+        <a href="projects.html" class="project-card">
+            <div>Java Projects</div>
+            <div class="project-icon"><i class="fab fa-java"></i></div>
+        </a>
+        <a href="projects.html" class="project-card">
+            <div>Python Projects</div>
+            <div class="project-icon"><i class="fab fa-python"></i></div>
+        </a>
+        <a href="projects.html" class="project-card">
+            <div>SQL Projects</div>
+            <div class="project-icon"><i class="fas fa-database"></i></div>
+        </a>
+    </section>
+</body>
+</html>
