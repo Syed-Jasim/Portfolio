@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Syed Mahammad Jasim</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/892/892401.png" type="image/png" sizes="16x16" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #000;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.name .first-name {
+    color: #fff;
+}
+
+.name .last-name {
+    color: #f5a623;
+}
+
+nav {
+    margin-left: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f5a623;
+}
+
+.about {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 10%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px auto; /* Centering the section */
+    max-width: 800px; /* Limiting width for larger screens */
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f5a623;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about {
+        padding: 40px 5%; /* Adjust padding for smaller screens */
+    }
+
+    .about h2 {
+        font-size: 28px; /* Smaller heading size */
+    }
+
+    .about p {
+        font-size: 16px; /* Smaller paragraph size */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column; /* Stack header elements */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack navigation links */
+        align-items: flex-start; /* Align to the start */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Space between links */
+    }
+
+    .about h2 {
+        font-size: 24px; /* Smaller heading size */
+    }
+
+    .about p {
+        font-size: 14px; /* Smaller paragraph size */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="name">
+            <span class="first-name">Syed Mahammad</span> <span class="last-name">Jasim</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html" class="btn-secondary" download>Resume</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="about">
+        <h2>About Me</h2>
+        <p>As a passionate coder and recent computer science graduate, I thrive on solving complex problems and creating innovative solutions. My journey in programming began with a fascination for technology and its ability to transform ideas into reality. With proficiency in languages such as Java and Python, I enjoy developing user-friendly applications that enhance everyday experiences. My approach combines creativity with analytical thinking, allowing me to tackle challenges effectively. I am eager to continue learning and growing in this ever-evolving field, contributing to projects that inspire and empower others.</p>
+    </section>
+</body>
+</html>
