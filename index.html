@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Syed Mahammad Jasim</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" type="image/png" sizes="16x16" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="name">
+            <span class="first-name">Syed Mahammad</span> <span class="last-name">Jasim</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="main">
+        <div class="intro-text">
+            <p>Hello!</p>
+            <h1>I'm <span>Syed Mahammad Jasim</span></h1>
+            <h3>Java Programmer</h3>
+            <div class="buttons">
+                <a href="assets/Syed Mahammad Jasim Resume.pdf" target="_blank" class="btn">Resume</a>
+                <a href="#projects" class="btn-secondary">My Works</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/zaseem._" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://leetcode.com/u/SyedMahammadJasim/" target="_blank"><i class="fas fa-code"></i></a>
+                <a href="https://github.com/Syed-Jasim" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/syed-mahammad-jasim-473872270/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="profile-photo">
+            <img src="assets/profile pic.jpg" alt="Profile Photo">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I’m Syed Mahammad Jasim, a final-year B.Tech student with a deep passion for technology and innovation. My
+            journey in tech has been fueled by my love for solving complex problems and building efficient solutions.
+            Whether it’s crafting clean code in Java and Python, or designing seamless user interfaces with HTML and
+            CSS, I thrive on bringing ideas to life through technology.
+
+            With a solid foundation in SQL for data management and a constant drive to learn, I aim to create scalable
+            and impactful applications that make a difference. I’m always looking to push the boundaries of what’s
+            possible in the world of software development.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-container">
+            <div class="skill-item">
+                <i class="fab fa-java"></i>
+                <p>Java</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <p>SQL</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <p>HTML</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Projects Section (modified) -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p>A simple weather app that fetches real-time weather data based on city name using the OpenWeather API.</p>
+                <a href="https://syed-jasim.github.io/Weather-App" target="_blank" class="project-button">View
+                    Project</a>
+                <a href="https://github.com/Syed-Jasim/Weather-App" target="_blank" class="project-button">Source
+                    Code</a>
+            </div>
+            <div class="project-card">
+                <h3>Sorting Algorithms Visualizer</h3>
+                <p>An interactive project for visualizing and comparing sorting algorithms.</p>
+                <a href="https://syed-jasim.github.io/Sorting-Algorithms-Visualizer" target="_blank" class="project-button">View Project</a>
+                <a href="https://github.com/Syed-Jasim/Sorting-Algorithms-Visualizer" target="_blank" class="project-button">Source Code</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>A description of your second project with technologies used.</p>
+                <a href="https://github.com/Syed-Jasim" target="_blank" class="project-button">View Project</a>
+                <a href="https://github.com/Syed-Jasim" target="_blank" class="project-button">Source Code</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section-->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:syedmahammad@example.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <div class="social-icons-contact">
+            <a href="mailto:syedmahammadjasim@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+91-8341971419"><i class="fas fa-phone"></i></a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Syed Mahammad Jasim. All rights reserved.</p>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
